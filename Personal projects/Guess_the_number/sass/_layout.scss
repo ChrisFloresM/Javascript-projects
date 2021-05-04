@@ -1,0 +1,86 @@
+.header {
+  margin: 4rem 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__play-again {
+    position: absolute;
+    left: 5vw;
+    top: -2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}
+
+.main {
+  width: 100%;
+  padding: 1.5rem;
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__guessed-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
+  &__message {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  &__score {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  &__number-select {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__label {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__user-number {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    height: 7rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__check {
+    padding: 2rem;
+    height: 7rem;
+    font-size: 1.5rem;
+  }
+}

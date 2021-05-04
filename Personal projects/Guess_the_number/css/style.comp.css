@@ -1,0 +1,82 @@
+.header {
+  margin: 4rem 0;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .header__title {
+    font-size: 4rem;
+    text-transform: uppercase; }
+  .header__play-again {
+    position: absolute;
+    left: 5vw;
+    top: -2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    cursor: pointer; }
+
+.main {
+  width: 100%;
+  padding: 1.5rem; }
+  .main__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .main__guessed-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid black; }
+  .main__message {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center; }
+  .main__score {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    font-size: 2rem; }
+  .main__number-select {
+    display: flex;
+    justify-content: center; }
+  .main__label {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; }
+  .main__user-number {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    height: 7rem;
+    border: 1px solid black;
+    margin-bottom: 1rem; }
+    .main__user-number:focus {
+      outline: 0; }
+  .main__check {
+    padding: 2rem;
+    height: 7rem;
+    font-size: 1.5rem; }
+
+:root {
+  --main-background: hsl(194, 10%, 41%);
+  --basic-white: hsl(100, 100%, 100%);
+  --basic-black: hsl(0, 0%, 0%); }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: 'Zen Dots', cursive;
+  min-height: 100vh;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

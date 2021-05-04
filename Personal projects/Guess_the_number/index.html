@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Guess the number game</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__play-again">Play again!</button>
+      <h1 class="header__title">Guess the number!</h1>
+    </header>
+    <main class="main">
+      <section class="main__section main__section--1">
+        <span class="main__guessed-number">?</span>
+        <p class="main__message">select a number between 1 and 100</p>
+      </section>
+      <section class="main__section main__section--2">
+        <div class="main__score">
+          <p class="main__score--text">Score: <span class="main__score--score-number">20</span></p>
+          <p class="main__score--highscore">Highscore: <span class="main__score--hscore-number">0</span></p>
+        </div>
+        <label class="main__label" for="number">Your number here</label>
+        <div class="main__number-select">
+          <input type="number" class="main__user-number" id="number" />
+          <button class="main__check">Check</button>
+        </div>
+      </section>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
